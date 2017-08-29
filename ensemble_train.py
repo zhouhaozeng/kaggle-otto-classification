@@ -325,11 +325,13 @@ def main():
     y_submission_pred = stacking_models_CV_train(stacking_models, train_models_pred, y, test_models_pred, n_classes=9, n_folds=5)
     y_submission_pred = y_submission_pred.mean(axis=2)
 
-    logging.info('Write submissions')
+    # write submission
+    logging.info('Write submission')
+    timestamp = time.strftime("%Y-%m-%d_%H:%M:%S")
     columns = ['Class_' + str(i + 1) for i in range(9)]
     submission_df = pd.DataFrame(y_submission_pred, columns=columns)
     submission_df.index = submission_df.index + 1
-    submission_df.to_csv('submission.csv', sep=',', index_label='id')
+    submission_df.to_csv('submission_%s.csv' % timestamp, sep=',', index_label='id')
     
     end_time = time.time()
     logging.info("Run complete: %s elapsed" % elapsed_time(start_time, end_time))
