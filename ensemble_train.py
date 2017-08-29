@@ -7,21 +7,21 @@ import time
 import numpy as np
 import pandas as pd
 
-from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import log_loss
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.manifold import TSNE
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.decomposition import PCA
-from sklearn.manifold import TSNE
 
 from xgboost import XGBClassifier
 
-from sklearn.metrics import log_loss
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
-from keras.regularizers import l1_l2
 from keras.wrappers.scikit_learn import KerasClassifier
+from keras.regularizers import l1_l2
 
 
 def elapsed_time(start_time, end_time):
