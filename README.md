@@ -1,6 +1,10 @@
 # kaggle-otto-classification
 My solution to [Otto Group Product Classification Challenge](https://www.kaggle.com/c/otto-group-product-classification-challenge) (Top 4%, 107th of 3514).
 
+## Solution diagram
+
+<img src="assets/solution_diagram.png" width="700">
+
 ## Running
 `python ensemble_train.py`
 

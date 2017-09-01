@@ -326,7 +326,7 @@ def main():
     y_submission_pred = y_submission_pred.mean(axis=2)
 
     # write submission
-    logging.info('Write submission')
+    logging.info("Write submission: averaging stacking models' predictions")
     timestamp = time.strftime("%Y-%m-%d_%H:%M:%S")
     columns = ['Class_' + str(i + 1) for i in range(9)]
     submission_df = pd.DataFrame(y_submission_pred, columns=columns)
