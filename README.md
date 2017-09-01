@@ -3,7 +3,7 @@ My solution to [Otto Group Product Classification Challenge](https://www.kaggle.
 
 ## Solution diagram
 
-<img src="assets/solution_diagram.png" width="700">
+<img src="assets/solution_diagram.png" width="600">
 
 ## Running
 `python ensemble_train.py`
