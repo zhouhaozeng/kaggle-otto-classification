@@ -5,8 +5,9 @@ My solution to [Otto Group Product Classification Challenge](https://www.kaggle.
 
 My solution is a 2-layer stacking classifier that ensembles multiple machine learning algorithms, including **k-Nearest Neighbors (KNN)**, **Logistic Regression (LR)**, **Random Forest (RF)**, **Gradient Boosting Classifier (XGB)**, and **Neural
 Networks (NN)**.The model achieved 82.4% accuracy rate in the test dataset.
-<br><br>
 
+Below is my solution diagram.
+<br><br>
 <img src="images/solution_diagram.png" width="750">
 
 ## Running
