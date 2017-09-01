@@ -7,7 +7,7 @@ My solution is a 2-layer stacking classifier that ensembles multiple machine lea
 Networks (NN)**.The model achieved 82.4% accuracy rate in the test dataset.
 <br><br>
 
-<img src="images/solution_diagram.png" width="650">
+<img src="images/solution_diagram.png" width="750">
 
 ## Running
 `python ensemble_train.py`
